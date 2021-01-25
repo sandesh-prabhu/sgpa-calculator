@@ -1,25 +1,7 @@
 #include<stdio.h>
-void main(int argc, char const *argv[])
+void main()
 {
-	do
-	{
-		int ch;
-		printf("1:SGPA Calculator\n2:CGPA Calculator\n3:Exit\nEnter your choice:");
-		scanf("%d",&ch);
-		switch(ch)
-		{
-			case 1:void sgpac();
-				break;
-			case 2:void cgpac();
-				break;
-			case 3:exit(0);
-		}
-	}while(ch!=3);
-}
-void sgpac()
-{
-	{
-    int i,n;
+   	int i,n;
 	printf("Enter the no. of subjects:\n");
 	scanf("%d",&n);
 	float a[n-1],b[n-1],sm=0,sc=0,sgp;
@@ -49,9 +31,4 @@ void sgpac()
 	}
 	sgp=(sm/sc);
 	printf("SGPA=%f\n",sgp);
-	return 0;
-}
-void cgpac()
-{
-	
 }
